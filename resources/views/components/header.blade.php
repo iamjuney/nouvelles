@@ -2,7 +2,7 @@
 
     <div class="s-header__branding">
         <p class="site-title">
-            <a href="index.html" rel="home">Spurgeon.</a>
+            <a href="index.html" rel="home">Nouvelles.</a>
         </p>
     </div>
 
@@ -17,10 +17,13 @@
                 <li class="has-children">
                     <a href="#0">Categories</a>
                     <ul class="sub-menu">
-                        <li><a href="#">Upcoming</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Film+Tv</a></li>
-                        <li><a href="#">Interviews</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Technology</a></li>
                     </ul>
                 </li>
             </ul> <!-- end s-header__nav -->

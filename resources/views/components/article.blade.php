@@ -12,7 +12,7 @@
         <div class="entry__header">
             <div class="entry__meta">
                 <span class="cat-links">
-                    <a href="#">Design</a>
+                    <a href="#">{{ $article['source']['name'] }}</a>
                 </span>
                 <span class="byline">
                     By:
@@ -25,7 +25,7 @@
                     </a>
                 </span>
             </div>
-            <h1 class="entry__title"><a href="single-standard.html">
+            <h1 class="entry__title"><a href="{{ $article['url'] }}">
                 {{ substr($article['title'], 0, strrpos( $article['title'], '-') ) }}</a>
             </h1>
             </div>
