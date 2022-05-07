@@ -37,9 +37,8 @@
 
     <!-- page wrap
     ================================================== -->
-    <div id="page" class="s-pagewrap ss-home">
-
-
+    <div id="page" class="s-pagewrap @if(Route::is('home')) ss-home @endif">
+    
         <!-- # site header
         ================================================== -->
         <x-header />

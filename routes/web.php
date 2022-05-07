@@ -17,3 +17,5 @@ use App\Http\Controllers\NewsController;
 */
 
 Route::get('/', [NewsController::class, 'index'])->name('home');
+
+Route::get('/business', [NewsController::class, 'showBusiness'])->name('business');
