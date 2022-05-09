@@ -22,7 +22,7 @@ The `.env.example` file is already filled with default database information incl
 ```
 cp .env.example .env
 ```
-### 5. Create a NewsAPI key from `https://newsapi.org/`. 
+### 5. Create a NewsAPI key from this [link](https://newsapi.org/). 
 Then write your api key in the `.env` file.
 ```
 // your newsapi key here
