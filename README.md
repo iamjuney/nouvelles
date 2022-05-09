@@ -22,6 +22,17 @@ The `.env.example` file is already filled with default database information incl
 ```
 cp .env.example .env
 ```
-### 5. Generate an app encryption key.
+### 5. Create a NewsAPI key from `https://newsapi.org/`. 
+Then write your api key in the `.env` file.
+```
+// your newsapi key here
+NEWSAPI_KEY = 
+```
+### 6. Generate an app encryption key.
 ```
 php artisan key:generate
+```
+### 7. Start a Laravel development server.
+```
+php artisan serve
+
