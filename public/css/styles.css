@@ -4503,8 +4503,8 @@ body.search-is-visible .s-header__search-inner {
 .s-footer {
     background-color : var(--color-gray-4);
     font-weight      : 300;
-    padding-top      : var(--vspace-4_5);
-    padding-bottom   : var(--vspace-3_5);
+    padding-top      : var(--vspace-2_5);
+    padding-bottom   : var(--vspace-2_5);
     position         : relative;
 }
 
@@ -4550,7 +4550,7 @@ body.search-is-visible .s-header__search-inner {
 .s-footer__main {
     font-size   : calc(var(--text-size) * 0.8889);
     line-height : var(--vspace-0_875);
-    border-top  : 1px solid var(--color-border);
+    /* border-top  : 1px solid var(--color-border); */
     padding-top : var(--vspace-1_25);
 }
 

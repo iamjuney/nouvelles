@@ -33,11 +33,19 @@ class NewsController extends Controller
         return view('home', compact('articles'));
     }
 
-    public function showBusiness()
+    public function showCategory($category)
     {
+        // array of categories
+        $categories = [ 'business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology' ];
+
+        //check if $category is in $categories
+        if (!in_array($category, $categories)) {
+            abort(404);
+        }
+
         $articles = Http::get('https://newsapi.org/v2/top-headlines', [
             'country' => 'ph',
-            'category' => 'business',
+            'category' => $category,
             // 'pageSize' => 20,
             'apiKey' => Config::get('services.newsapi.key'),
         ])->json()['articles'];
@@ -55,6 +63,6 @@ class NewsController extends Controller
             ];
         }, $articles);
 
-        return view('category', compact('articles'));
+        return view('category', compact('articles'))->with('category', $category);
     }
 }

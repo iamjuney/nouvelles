@@ -13,17 +13,22 @@
             <h3 class="s-header__nav-heading">Navigate to</h3>
 
             <ul class="s-header__nav">
-                <li class="current-menu-item"><a href="/">Home</a></li>
-                <li class="has-children">
-                    <a href="#0">Categories</a>
+                <li class="
+                    @if(Route::is('home')) current-menu-item @endif
+                    "><a href="/">Home</a></li>
+
+                <li class="has-children
+                    @if(!Route::is('home')) current-menu-item @endif
+                    ">
+
+                    <a href="#">Categories</a>
                     <ul class="sub-menu">
-                        <li><a href="{{ route('business') }}">Business</a></li>
-                        <li><a href="#">Entertainment</a></li>
-                        <li><a href="#">General</a></li>
-                        <li><a href="#">Health</a></li>
-                        <li><a href="#">Science</a></li>
-                        <li><a href="#">Sports</a></li>
-                        <li><a href="#">Technology</a></li>
+                        <li><a href="/business">Business</a></li>
+                        <li><a href="/entertainment">Entertainment</a></li>
+                        <li><a href="/health">Health</a></li>
+                        <li><a href="/science">Science</a></li>
+                        <li><a href="/sports">Sports</a></li>
+                        <li><a href="/technology">Technology</a></li>
                     </ul>
                 </li>
             </ul> <!-- end s-header__nav -->
